@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 
+// This class is for the flame demon enemy
+// Enemy2 is a subclass of EnemyParent, which is a subclass of CharacterStats
+// It will not move, but when the player is within range of maxDistance, it will shoot fireballs at the player
+
 public class Enemy2 : EnemyParent
 {
     public GameObject drop;
