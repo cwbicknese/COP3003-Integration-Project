@@ -54,5 +54,14 @@ There are still two bugs that I have not yet figured out:
 
 1. It doesn't always detect the 'Enter' input when trying to heal at a glowing circle.
 
-The code for this is in proj/Assets/Scripts/PlayerMovement.cs
-This bug is not game-breaking because it tends to work within a few 'Enter' inputs, but it should be activating 100% of the time when the player presses 'Enter'. This is the only input that doesn't always work despite being written the same way as other input detections. There are checks for whether the player has enough gold and if they are already at full HP and MP, but these seem to be working correctly. It's just that it doesn't get to those checks every time 'Enter' is inputted, which leadsd me to believe that it might be some strange issue with the collision detection.
+The code for this is in proj/Assets/Scripts/PlayerMovement.cs, starting on line 168.
+
+This bug is not game-breaking because it tends to work within a few 'Enter' inputs, but it should be activating 100% of the time when the player presses 'Enter'. This is the only input that doesn't always work despite being written the same way as other input detections. There are checks for whether the player has enough gold and if they are already at full HP and MP, but these seem to be working correctly. It doesn't display the debug message when it doesn't work, so it just isn't getting to that part of the code, which leads me to believe that it might be an issue with the collision detection.
+
+2. Sometimes enemies don't die despite being at less than or equal to 0 health.
+
+The code for this is in proj/Assets/Scripts/Enemy2, starting with line
+Could also be associated with proj/Assets/Scripts/EnemyParent or CharacterStats in the die() function.
+
+This bug is a little more game-breaking, because when it happens the enemy just doesn't die. The good news is that it seems fairly repeatable. This bug is only occurring after raising the Attack stat to 14 or so, and it it seems to only happen with the flame demon enemy. However, I am unsure of why the Attack stat would be relevant here because the die() function is called when health <= 0, and there is no connection to the Attack Stat aside from health being reduced by different amounts depending on the Attack stat. Also the fireballs that a player shoots at the enemy will start going through the enemy when this happens instead of destroying itself, so it seems that some part of the enemy is being destroyed, to the point that fireballs will no longer collide with the enemy, but the enemy is still visible and can shoot their own fireballs.
+
