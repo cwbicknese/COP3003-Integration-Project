@@ -31,7 +31,7 @@ Press "F" to shoot a fire ball forward. This costs 5 MP. This deals damage equal
 
 Press "I" to surround the player in ice. This costs 10 MP. This is a close-range spell that deals damage equal to half of the player's attack stat, and ignores the enemy's defense. This is useful against the larger enemies with high defense. It can also reflect enemy projectiles, so when an enemy shoots a fireball at you, you can cast the ice spell to shoot it back at the enemy. When this happens, damage will be calculated based on the enemy's attack stat minus their defense stat.
 
-Casting a spell will toggle the able variable in GeneralFunctions to false for a short duration. This is to create a bit of endlag to the player's actions.
+Casting a spell will toggle the able variable in GeneralFunctions to false for a short duration. This is to create a bit of endlag to the player's actions, and the player will only be able to move and perform actions when the able variable is true again.
 
 **Enemies:**
 
