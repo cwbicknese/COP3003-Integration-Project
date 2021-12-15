@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 
+// This class is for the skeleton enemy
+// This is a subclass to EnemyParent, which is a subclass to CharacterStats
+// This enemy will chase the player when the player is within range of maxDistance
+
 public class Enemy1 : EnemyParent
 {
     public GameObject drop;
@@ -19,7 +23,7 @@ public class Enemy1 : EnemyParent
 
             if (Vector3.Distance(transform.position,player.position) <= minDistance)
             {
-                attackSpeed = 6f;
+                attackSpeed = 6f; //move faster when the player is very close
             }
             else
             {
