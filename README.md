@@ -19,7 +19,7 @@ The player can move with either WASD or the arrow keys. Press space to jump. Whi
 
 Because the player has the script PlayerMovement, which is a subclass to CharacterStats, the player inherits the members from CharacterStats.
 The player has HP, MP, Attack, and Defense stats.
-Casting spells consumes MP. MP can be restored by colliding with the glowing circle. This would also restore HP.
+Casting spells consumes MP.
 Attack can be increased by collecting potions.
 Gold can be found throughout the level. The player simply collides with it to gain it.
 
