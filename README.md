@@ -82,6 +82,7 @@ Could also be associated with proj/Assets/Scripts/EnemyParent or CharacterStats 
 This bug is a little more game-breaking, because when it happens the enemy just doesn't die. The good news is that it seems fairly repeatable. This bug is only occurring after raising the Attack stat to 14 or so, and it seems to only happen with the flame demon enemy. However, I am unsure of why the Attack stat would be relevant here because the die() function is called when health <= 0, and there is no connection to the Attack Stat aside causing health to be reduced by a different amount. Also, the fireballs that a player shoots at the enemy will start going through the enemy when this happens instead of destroying itself, so it seems that some part of the enemy is being destroyed, to the point that fireballs will no longer collide with the enemy, but the enemy is still visible and can shoot their own fireballs.
 
 **Credits:**
+
 Brackeys' Youtube videos helped a lot with getting started on the movement and camera.
 
 Brackeys - Third Person Movement in Unity https://www.youtube.com/watch?v=4HpC--2iowE
@@ -95,6 +96,7 @@ This video from Adam Konig also helped me get the projectiles working, which can
 https://www.youtube.com/watch?v=RnEO3MRPr5Y
 
 **Assets downloaded from Unity Asset Store**
+
 These are the textures and prefabs I downloaded from the Unity store to make the game more visually pleasing:
 
 LowlyPoly - Hand Painted Stone Texture
