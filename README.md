@@ -1,5 +1,5 @@
 # COP-3003-FinalProject
-This is a game I am making in Unity using C#. Source code is found in Proj/Assets/Scripts.
+This is a game I am making in Unity with Visual Studio using C#. Source code is found in Proj/Assets/Scripts.
 
 The player plays as a sorcerer who can cast spells to defeat enemies. There are several potions that increase the player's attack that can be found hidden throughout the map, and they can sometimes be acquired by defeating enemies. Gold can be found throughout the map, which can be spent at the glowing circles to heal the player's HP and MP for 10 gold. Each piece of gold gives the player 5 gold, and there is a large bag of gold at the end of the map that is worth 50 gold.
 
