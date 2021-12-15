@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+// EnemyParent is a sublclass of CharacterStats
+// This class contains anything that all enemies should have or do
+// It is the superclass to Enemy1 and Enemy2
+
 public class EnemyParent : CharacterStats // is a subclass of CharacterStats
 {
     public int dropRate; // this will be a number that acts as a percentage.
@@ -39,7 +43,6 @@ public class EnemyParent : CharacterStats // is a subclass of CharacterStats
         {
             return 0; //prevent hp from being negative
         }
-
     }
 
     protected override void die()
