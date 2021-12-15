@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
-// https://www.youtube.com/watch?v=e8GmfoaOB4Y&t=245s
+// This class will be for any character that has stats.
+// The player and enemies will be subclasses to this so that they can have hp and can take damage
+// This class has a virtual function which is overridden in the subclasses PlayerMovement, Enemy1, Enemy2, and EnemyParent
+// referenced: https://www.youtube.com/watch?v=e8GmfoaOB4Y&t=245s
 
 public class CharacterStats : MonoBehaviour
 {
