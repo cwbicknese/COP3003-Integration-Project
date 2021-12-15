@@ -42,4 +42,4 @@ The larger enemies have more health and defense, and upon death have a 100% chan
 The enemies use the classes Enemy1 and Enemy2, which are both subclasses to the same superclass EnemyParent, which is a subclass to CharacterStats.
 This allows both Enemy1 and Enemy2 to inherit all members from EnemyParent and from CharacterStats, while adding and overriding other members.
 
-![unity_game_screenshot](https://user-images.githubusercontent.com/42978071/143307384-f6c11d69-c05b-48ad-bc3e-a70a9ab56fa1.PNG)
+![Screenshot (118)](https://user-images.githubusercontent.com/42978071/146262590-27c3d830-d663-47a4-8090-5849f10ca867.png)
