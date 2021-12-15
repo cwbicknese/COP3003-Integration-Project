@@ -56,17 +56,7 @@ public class GuiScript : MonoBehaviour
     {
         return playerStats.mp / playerStats.mpMax;
     }
-
 }
 
-// assets downloaded from Unity Asset Store
-/* LowlyPoly - Hand Painted Stone Texture
- * LowlyPoly - Fantasy Treasure Pack Lite
- * amusedArt - Stone Monster
- * TeamJoker - Fantasy Monster - Skeleton
- * TS WORK - Fantasy Monster(Wizard) DEMO
- * 
- * 
- * 
- */
+
 
