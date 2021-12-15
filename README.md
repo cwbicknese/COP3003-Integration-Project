@@ -36,8 +36,10 @@ Casting a spell will toggle the able variable in GeneralFunctions to false for a
 **Enemies:**
 
 There are 2 types of enemies: skeletons and flame demons.
+
 The skeletons have less health and defense, and upon death have a 25% chance to drop a potion that boosts attack.
 Skeletons will chase the player when the player is near them, and they will chase faster when they get very close. The player will take damage upon collision with the skeleton.
+
 The flame demons have more health and defense, and upon death have a 100% chance to drop a potion that boosts attack.
 Flame demons shoot fireballs toward the player at regular intervals when the player is near them. These fireballs can be reflected back at the flame demon by using the ice spell at the right time.
 
@@ -45,3 +47,12 @@ The enemies use the classes Enemy1 and Enemy2, which are both subclasses to the 
 This allows both Enemy1 and Enemy2 to inherit all members from EnemyParent and from CharacterStats, while adding and overriding other members.
 
 ![Screenshot (118)](https://user-images.githubusercontent.com/42978071/146262590-27c3d830-d663-47a4-8090-5849f10ca867.png)
+
+**Bugs:**
+
+There are still two bugs that I have not yet figured out:
+
+1. It doesn't always detect the 'Enter' input when trying to heal at a glowing circle.
+
+The code for this is in proj/Assets/Scripts/PlayerMovement.cs
+This bug is not game-breaking because it tends to work within a few 'Enter' inputs, but it should be activating 100% of the time when the player presses 'Enter'. This is the only input that doesn't always work despite being written the same way as other input detections. There are checks for whether the player has enough gold and if they are already at full HP and MP, but these seem to be working correctly. It's just that it doesn't get to those checks every time 'Enter' is inputted, which leadsd me to believe that it might be some strange issue with the collision detection.
