@@ -7,7 +7,13 @@ using UnityEngine.UI;
 // EnemyParent is the superclass to Enemy1 and Enemy2
 // This class contains anything that all enemies should have or do
 // The subclasses Enemy1 and Enemy2 will inherit from EnemyParent, which inherits from CharacterStats, therefore Enemy1 and Enemy2 will also inherit from CharacterStats
-// Subclasses only have access to public and protected members of their superclasses
+
+// Visibility Inheritence Model:
+// Private members can only be accessed by their own class
+// Protected members can only be accessed by classes that have an inheritence relation with the class
+// Public members can be accessed by any class
+// Example: EnemyParent can access public and protected members of CharacterStats because it is a subclass of it, but not private members in CharacterStats
+// The Fireball class has no relation to CharacterStats, so it cannot access private or protected members from CharacterStats
 
 public class EnemyParent : CharacterStats // is a subclass of CharacterStats
 {
