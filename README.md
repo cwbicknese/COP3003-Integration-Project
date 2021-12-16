@@ -3,11 +3,16 @@ This is a game made in Unity with Visual Studio using C#. Source code is found i
 
 **Project requirements:**
 
-    Bottom of Enemy1: The comments explain inheritence and dynamic dispatch.
-  
-    Bottom of PlayerMovement: The comments explain the use of generics.
-  
-    Top of Stats: The comments explain encapsulation.
+LO1: proj/Assets/Scripts/CharacterStats.cs - line 10
+LO4: proj/Assets/Scripts/CharacterStats.cs - line 7
+Lo1b: proj/Assets/Scripts/CharacterStats.cs - lines 31-36
+LO1c: proj/Assets/Scripts/CharacterStats.cs - lines 33-38
+LO2: proj/Assets/Scripts/EnemyParent.cs - lines 4
+LO2a: proj/Assets/Scripts/EnemyParent.cs - line 11
+LO3: proj/Assets/Scripts/CharacterStats.cs - line 73
+LO5: proj/Assets/Scripts/EnemyParent.cs - line 7
+LO6: proj/Assets/Scripts/Stat.cs - lines 10-16
+LO7: proj/Assets/Scripts/PlayerMovement.cs - line 223
 
 **Gameplay:**
 
