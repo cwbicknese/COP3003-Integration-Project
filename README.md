@@ -1,4 +1,4 @@
-# COP-3003-FinalProject
+# COP-3003-Integration-Project
 This is a game made in Unity with Visual Studio using C#. Source code is found in Proj/Assets/Scripts.
 
 **Project requirements:**
