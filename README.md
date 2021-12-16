@@ -113,8 +113,6 @@ https://www.youtube.com/watch?v=RnEO3MRPr5Y
 
 **Assets downloaded from Unity Asset Store**
 
-These are the textures and prefabs I downloaded from the Unity store to make the game more visually pleasing:
-
 LowlyPoly - Hand Painted Stone Texture
 
 LowlyPoly - Fantasy Treasure Pack Lite
