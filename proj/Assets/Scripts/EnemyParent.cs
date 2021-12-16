@@ -2,8 +2,12 @@
 using UnityEngine.UI;
 
 // EnemyParent is a sublclass of CharacterStats
+// EnemyParent will inherit members from CharacterStats, but CharacterStats will not have members unique to EnemyParent
+
+// EnemyParent is the superclass to Enemy1 and Enemy2
 // This class contains anything that all enemies should have or do
-// It is the superclass to Enemy1 and Enemy2
+// The subclasses Enemy1 and Enemy2 will inherit from EnemyParent, which inherits from CharacterStats, therefore Enemy1 and Enemy2 will also inherit from CharacterStats
+// Subclasses only have access to public and protected members of their superclasses
 
 public class EnemyParent : CharacterStats // is a subclass of CharacterStats
 {
