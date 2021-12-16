@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// This class is for fireballs, both from the player and from Enemy2
+// It uses the bool belongsToEnemy so that it applies damage only to the player or to enemies depending on what class it came from
+
 public class Fireball : MonoBehaviour
 {
     private int duration = 600; // this is private so that the variable is only accessible within this class
@@ -34,6 +37,7 @@ public class Fireball : MonoBehaviour
                 other.gameObject.GetComponent<PlayerMovement>().takeDamage(dmg); // calls takeDamage() from PlayerMovement. PlayerMovement has no function takeDamage(), so it finds it in its superclass CharacterStats.                                                             
                 Destroy(gameObject); //destroys self
             }
+            //ice reflects it
             if (other.gameObject.CompareTag("ice"))
             {
                 gameObject.GetComponent<Rigidbody>().velocity *= -1; //inverts the velocity so that it shoots back at the enemy
