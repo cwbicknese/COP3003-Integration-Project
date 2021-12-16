@@ -3,10 +3,13 @@
 // This class will be for any character that has stats.
 // The player and enemies will be subclasses to this so that they can have hp and can take damage
 // This class has a virtual function which is overridden in the subclasses PlayerMovement, Enemy1, Enemy2, and EnemyParent
-// referenced: https://www.youtube.com/watch?v=e8GmfoaOB4Y&t=245s
+
+//Procedural vs OOP: Procedural programming has structures that take information and does things with it.
+// Object-Oriented Programming uses objects with inheritence that uses their own information and does things with it.
 
 public class CharacterStats : MonoBehaviour
 {
+    // referenced: https://www.youtube.com/watch?v=e8GmfoaOB4Y&t=245s
     //HP
     public float hpMax;
     public float hp;
