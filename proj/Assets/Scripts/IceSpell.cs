@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// This class is for the ice spell the player can cast
+// It will make a block of ice on top of the player that can damage enemies and reflect fireballs
+
 public class IceSpell : MonoBehaviour
 {
     private int duration = 100; //how long the ice spell will last
