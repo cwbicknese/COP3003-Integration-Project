@@ -64,6 +64,10 @@ This allows both Enemy1 and Enemy2 to inherit all members from EnemyParent and f
 
 ![Screenshot (118)](https://user-images.githubusercontent.com/42978071/146262590-27c3d830-d663-47a4-8090-5849f10ca867.png)
 
+**Class Diagrams**
+
+![COP3003 UML Class Diagram](https://user-images.githubusercontent.com/42978071/146299544-836da752-01a9-4b6d-a31c-5960183c37aa.png)
+
 **Code Analysis**
 
 For analyzing my code for issues, I used ReSharper.
