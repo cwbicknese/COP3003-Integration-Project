@@ -26,6 +26,7 @@ public class SplashText : MonoBehaviour
         }
     }
 
+    //sets the txt to what it will write, and the count to how long it will stay on the screen (default of 300 frames)
     public void setText(string newString, int maxCount = 300)
     {
         txt = newString;
