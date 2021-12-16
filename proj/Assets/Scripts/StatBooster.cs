@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// This is for the potions that the player can pick up to increase their Attack stat
+// Colliding with one will increase attack by 1 and display a message on the screen saying "Attack Increased!"
+
 public class StatBooster : MonoBehaviour
 {
     private GameObject objSplash;
