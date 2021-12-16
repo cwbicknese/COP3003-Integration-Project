@@ -82,7 +82,7 @@ Remaining issues detected by ReSharper:
 
 **4. Redundancies in Symbol Declaration:** These warnings seem to be about classes and methods not being used, but I am confused why I am getting that issue, because I am sure that they are being used, and deleting those classes and methods would take out chunks of my game.
 
-**5. Spelling Issues:** These are mostly just words in the comments that are not recognized, like "healthbar", "rigidbody", and "endlag". These are fine as they are, but I am not sure if there is a way to remove the warning without deleting the words from the comments, so the warnings remain.
+**5. Spelling Issues:** These are mostly just words in the comments that are not recognized, like "healthbar", "rigidbody", and "endlag". These are fine as they are, but I am not sure if there is a way to remove the warning without deleting/changing the words from the comments, so the warnings remain.
 
 **Bugs:**
 
