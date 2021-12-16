@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI; //this is needed to use Unity's Text class
 
+// This class is used to temporarily write text to the middle of the screen (like "Found X gold!" and "Attack Increased!")
+
 public class SplashText : MonoBehaviour
 {
     public Text splashText;
