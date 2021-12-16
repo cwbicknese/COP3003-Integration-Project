@@ -68,6 +68,7 @@ public class CharacterStats : MonoBehaviour
     }
 
     // Polymorphism: when die() is called, because it is virtual, it will look for the most derived class that has the function.
+    // Dynamic dispatch is polymorphism at runtime
     protected virtual void die()
     {
         if (gameObject != null) 
