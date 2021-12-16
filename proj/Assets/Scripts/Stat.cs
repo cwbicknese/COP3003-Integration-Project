@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// These are used for the attack and defense stats
 // https://www.youtube.com/watch?v=e8GmfoaOB4Y&t=245s
 
 [System.Serializable] //enables [SerializeField]
@@ -22,15 +23,15 @@ public class Stat
     {
         baseValue = newValue;
     }
-
-    public void
-        incValue(int amount = 1) // default parameter sets the increase amount to 1 if no argument is given in the call
+    
+    //increase by amount
+    public void incValue(int amount = 1) // default parameter sets the increase amount to 1 if no argument is given in the call
     {
         baseValue += amount;
     }
 
-    public void
-        decValue(int amount = 1) // default parameter sets the decrease amount to 1 if no argument is given in the call
+    //decrease by amount
+    public void decValue(int amount = 1) // default parameter sets the decrease amount to 1 if no argument is given in the call
     {
         baseValue -= amount;
     }
