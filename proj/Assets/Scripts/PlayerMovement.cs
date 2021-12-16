@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// this class contains the actions and movements the player can perform
-// it is a subclass of CharacterStats
+// This is the main script for the player
+// It is a subclass of CHaracterStats
+// This class contains the actions and movements the player can perform
 
 public class PlayerMovement : CharacterStats
 {
